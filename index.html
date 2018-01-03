@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+.load_box {
+    border: 1px solid #333;
+    width: 400px;
+    height: 20px;
+    margin: 100px auto;
+}
+.load {
+    height: 20px;
+    width: 0%;
+    background-color: blue;
+}
+#percent #searchBtn #searcgText{
+    position: absolute;
+    top: 110px;
+    left: 49%;
+}
+</style>
+<script language="javascript" type="text/javascript">
+var bar = 0;
+function count() {
+    // bar = bar + 1;
+    // barp = bar + '%';
+    // document.getElementById("load_id").style.width = barp;
+    // document.getElementById("percent").innerText = barp;
+    var word=document.getElementById("searcgText").value;
+    // if (bar < 100) {
+    //     setTimeout("count()", 100);
+    // } else {
+        window.location = "http://www.baidu.com/s?wd="+word;
+    // }
+}
+</script>
+</head>
+
+<body>
+    <input type="text" name="wd" id="searcgText" placeholder="请输入搜索内容">
+    <button id="searchBtn" onclick="count()">链接跳转</button>
+</body>
+
+</html>
