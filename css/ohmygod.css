@@ -1,12 +1,14 @@
-.col-xs-4{
-	padding-left: 0px;
-	padding-right: 0px;
+.row {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.col-xs-4 a{
-	margin-bottom: 0px;
+.col-xs-4 a {
+    margin-bottom: 0px;
 }
 
 .container {
-	margin-top: 40px;
+    margin-top: 40px;
 }
